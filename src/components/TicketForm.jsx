@@ -23,7 +23,7 @@ export default function TicketForm({dispatch, editingTicket}) {
 
 
         const ticketData = {
-            id: editingTicket? editingTicket.id :  Date().toISOString(),
+            id: editingTicket? editingTicket.id :  new Date().toISOString(),
             title,
             description,
             priority

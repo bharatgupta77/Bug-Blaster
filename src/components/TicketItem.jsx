@@ -16,6 +16,7 @@ function TicketItem({ticket, dispatch}) {
             <p>{description}</p>
 
             <button className="button" onClick={() => dispatch({ })}>Update</button>
+            
             <button className="button" onClick={() => dispatch({type : "DELETE_TICKET", payload: {id} })}>Delete</button>
         </div>
     )
