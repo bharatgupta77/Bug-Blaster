@@ -9,7 +9,6 @@ export default function ticketReducer (state, action)
 
             case 'UPDATE_TICKET':
                  return {
-
                      ...state,
                      tickets: state.tickets.map(ticket => ticket.id === action.payload.id ? action.payload : ticket)
                  }
